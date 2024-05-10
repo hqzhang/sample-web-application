@@ -5,8 +5,7 @@ library identifier: 'custom-lib@master', retriever: modernSCM(
    remote: 'https://github.com/hqzhang/sample-web-application.git',
    credentialsId: ''])
 
-def z = new org.foo.MavenBuilder()
-z.mavenBuild()
+
 
 pipeline{
 	
@@ -20,9 +19,11 @@ pipeline{
             }*/
         
         stages{
-
               stage('maven build'){
                   steps{
+               script {
+                def z = new org.foo.MavenBuilder()
+               z.mavenBuild()}
 			/*config('repo_config.yml') { 
 			     sh "${mavenBuild()}"  
    			} */
