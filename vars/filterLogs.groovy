@@ -1,6 +1,6 @@
 import org.foo.MavenBuilder
 def test(){
-
-    def z = MavenBuilder()
-    z.mavenBuild()
+    println  "enter test() no new"
+    //def z = MavenBuilder()
+    //z.mymavenBuild()
 }
