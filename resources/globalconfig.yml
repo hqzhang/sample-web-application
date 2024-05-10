@@ -1,0 +1,4 @@
+builder: 
+  maven: 
+    goal: clean install 
+
