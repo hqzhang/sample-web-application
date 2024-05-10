@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
 
-@Library('jenkins-share-library') _ //master or whatever branch
+library identifier: 'custom-lib@master', retriever: modernSCM(
+  [$class: 'GitSCMSource',
+   remote: 'https://github.com/hqzhang/sample-web-application.git',
+   credentialsId: ''])
 
 pipeline{
 	
