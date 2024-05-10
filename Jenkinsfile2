@@ -5,6 +5,9 @@ library identifier: 'custom-lib@master', retriever: modernSCM(
    remote: 'https://github.com/hqzhang/sample-web-application.git',
    credentialsId: ''])
 
+def z = new org.foo.MavenBuilder()
+z.mavenBuild()
+
 pipeline{
 	
        agent any

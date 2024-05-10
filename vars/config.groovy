@@ -1,3 +1,4 @@
+
 def call(String filePath, Closure closure){
     def request = libaryResource 'globalconfig.yml'
     println "request: $request"

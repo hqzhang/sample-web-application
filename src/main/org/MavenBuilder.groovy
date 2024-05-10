@@ -1,3 +1,4 @@
+pacakge org
 class MavenBuilder{
 Map map_var
   def mavenBuild(){
