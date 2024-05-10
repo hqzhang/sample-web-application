@@ -1,7 +1,7 @@
 pacakge org.foo
-class MavenBuilder1 {
+class MavenBuilder {
 Map map_var
-  def mavenBuild(){
+  def mymavenBuild(){
     "mvn " + map_var.builder.maven.goal
   }
 
